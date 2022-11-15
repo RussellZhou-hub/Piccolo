@@ -95,7 +95,7 @@ namespace Piccolo
             throw std::runtime_error("alloc memory");
         }
 
-        if (data != nullptr && datasize != 0)
+        if (data != nullptr && datasize != 0) 
         {
             void* mapped;
             if (VK_SUCCESS != vkMapMemory(device, *memory, 0, size, 0, &mapped))
